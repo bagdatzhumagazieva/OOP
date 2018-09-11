@@ -4,23 +4,23 @@ public class StarTriangle {
 
     public StarTriangle(int width) {
 
-    this.width=width;
-}
-public  String ToString(){
+        this.width=width;
+    }
+    public  String toString(){
         int cnt=0;
         String s="";
         for(int i=0; i<width; i++){
             cnt++;
-            for(int j=0; j<cnt; i++){
+            for(int j=0; j<cnt; j++){
                 s+="[*]";
 
             }
             s+="\n";
         }
         return  s;
-}
+    }
     public static void main(String[] args) {
         StarTriangle small=new StarTriangle(4);
-        System.out.println(small.ToString());
+        System.out.println(small.toString());
     }
 }
