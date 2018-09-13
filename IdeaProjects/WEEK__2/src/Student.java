@@ -16,10 +16,7 @@ public  class Student {
     static int getYOS(int y){ return  y;}
     public class Main {
 
-
     }
-
-
         public static void main(String[] args) {
             Student s=new Student("Bagdat",2018);
 

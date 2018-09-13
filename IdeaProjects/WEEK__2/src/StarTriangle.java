@@ -1,10 +1,10 @@
-public class StarTriangle {
+import  java.util.Scanner;
+ public class StarTriangle {
 
-    public static int width;
+    public  int width;
 
     public StarTriangle(int width) {
-
-        this.width=width;
+    this.width=width;
     }
     public  String toString(){
         int cnt=0;
@@ -20,7 +20,9 @@ public class StarTriangle {
         return  s;
     }
     public static void main(String[] args) {
-        StarTriangle small=new StarTriangle(4);
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        StarTriangle small=new StarTriangle(x);
         System.out.println(small.toString());
     }
 }
